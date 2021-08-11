@@ -1,7 +1,7 @@
 import Image from "next/image";
 import userProfile from "../public/images/userProfile.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillFileText } from "react-icons/ai";
-import { FaDev, FaLocationArrow } from "react-icons/fa";
+import { FaDev, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
@@ -23,9 +23,9 @@ const Sidebar = () => {
         href="#"
         download="resume"
       >
-        <AiFillFileText className="text-green" /> My Resume
+        <AiFillFileText className="text-blue-900" /> My Resume
       </a>
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-blue-900 md:w-full">
         <a href="https://linkedin.com">
           <AiFillLinkedin className="w-8 h-8" />
         </a>
@@ -41,19 +41,25 @@ const Sidebar = () => {
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
-          <FaLocationArrow className="text-green" />
+          <FaLocationArrow className="text-blue-900" />
           <span className="font-roboto-condensed">Karachi,Pakistan</span>
         </div>
-        <p className="my-2 font-roboto-condensed">Jhon@doe.com</p>
-        <p className="my-2 font-roboto-condensed">+14434567890</p>
+        <div className="flex items-center justify-center space-x-2">
+          <FaMailBulk className="text-blue-900" />
+          <p className="my-2 font-roboto-condensed">Jhon@doe.com</p>
+        </div>
+        <div className="flex items-center justify-center space-x-2">
+          <FaPhone className="text-blue-900" />
+          <p className="my-2 font-roboto-condensed">+14434567890</p>
+        </div>
       </div>
       <button
-        className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-green to-blue-400"
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-blue-900 to-blue-400"
         onClick={() => window.open("mailto:")}
       >
         Contact me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-green to-blue-400">
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-blue-900 to-blue-400">
         Dark mode
       </button>
     </div>
