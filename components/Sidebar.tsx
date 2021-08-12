@@ -2,8 +2,14 @@ import Image from "next/image";
 import userProfile from "../public/images/userProfile.jpg";
 import { AiFillGithub, AiFillLinkedin, AiFillFileText } from "react-icons/ai";
 import { FaDev, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div>
       <Image
@@ -11,9 +17,8 @@ const Sidebar = () => {
         alt="user-profile"
         className="w-32 h-32 mx-auto rounded-full"
       />
-      <h2 className="my-3 text-3xl font-medium tracking-wider font-roboto-condensed">
-        <span className="font">Jhon </span>
-        Doe
+      <h2 className="my-3 text-2xl font-medium tracking-wider dark:text-white font-roboto-condensed">
+        Syed Umair Ali
       </h2>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full font-roboto-condensed">
         Web/Mobile Developer
@@ -59,7 +64,10 @@ const Sidebar = () => {
       >
         Contact me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-blue-900 to-blue-400">
+      <button
+        onClick={changeTheme}
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-blue-900 to-blue-400"
+      >
         Dark mode
       </button>
     </div>

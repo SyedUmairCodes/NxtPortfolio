@@ -6,7 +6,7 @@ export interface IService {
 }
 
 export interface ISkill {
-  title: string;
-  about: string;
+  name: string;
+  level: string;
   Icon: IconType;
 }

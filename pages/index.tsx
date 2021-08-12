@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 //import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
 import React from "react";
 import { services } from "../data";
@@ -19,7 +20,7 @@ const index = () => {
         <div className="grid gap-6 rounded-lg lg:grid-cols-2">
           {services.map((service) => (
             <div className="grid gap-6 lg:col-span-1">
-              <ServiceCard service={service} />
+              <ServiceCard service={service} key={service.title} />
             </div>
           ))}
         </div>
