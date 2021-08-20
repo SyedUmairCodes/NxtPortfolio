@@ -6,7 +6,7 @@ import {
   AiFillMobile,
 } from "react-icons/ai";
 import { RiAddCircleFill, RiComputerFill } from "react-icons/ri";
-import { ISkill, IService } from "./types";
+import { IProject, ISkill, IService } from "./types";
 
 export const services: IService[] = [
   {
@@ -99,5 +99,27 @@ export const tools: ISkill[] = [
     name: "Kubernetes",
     level: "50%",
     Icon: RiAddCircleFill,
+  },
+];
+
+export const projects: IProject[] = [
+  {
+    name: "Mern-House",
+    description:
+      "A production-ready Web-application that helps people rent houses",
+    image_path: "/images/mern-house.png",
+    deployed_url: "",
+    github_url: "https://github.com/SyedUmairAli2000/Mern-House",
+    category: ["React", "MongoDB", "Node"],
+    tech: ["React", "Ant-Design", "GraphQL", "TypeScript"],
+  },
+  {
+    name: "React-Gatsby Header",
+    description: "A modern react header component ",
+    image_path: "/images/reactheader.png",
+    deployed_url: "https://react-gatsby-header.netlify.app/",
+    github_url: "https://gitlab.com/SyedUmairAli2000/reactheader",
+    category: ["React"],
+    tech: ["React", "Gatsby"],
   },
 ];

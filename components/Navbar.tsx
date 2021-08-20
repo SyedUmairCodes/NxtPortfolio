@@ -29,12 +29,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("About");
-    if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/resume") setActiveItem("Resume");
+    if (pathname === "/Projects") setActiveItem("Projects");
+    if (pathname === "/Resume") setActiveItem("Resume");
   }, []);
 
   return (
-    <div className="flex justify-between px-5 py-3 my-3">
+    <div className="flex justify-between px-5 py-3 my-3 dark:bg-dark-700">
       <span className="text-xl font-bold text-blue-900 border-b-4 border-blue-900 md:text-2xl font-roboto-condensed">
         {activeItem}
       </span>
@@ -49,13 +49,13 @@ const Navbar = () => {
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="Projects"
-          route="/projects"
+          route="/Projects"
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="Resume"
-          route="/resume"
+          route="/Resume"
         />
       </div>
     </div>

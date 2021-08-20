@@ -6,15 +6,15 @@ import ServiceCard from "../components/ServiceCard";
 
 const index = () => {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <div className="flex flex-col flex-grow px-6 pt-1 dark:bg-dark-700">
       <h5 className="my-3 font-medium">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eius
         impedit? Atque, ipsa. Enim accusantium optio fugiat dolorum vitae ab
         minus, velit tenetur doloremque quod eligendi esse alias.
       </h5>
       <div
-        className="p-4 mt-10 bg-gray-200 rounded-lg"
-        style={{ marginLeft: -"1.5rem", marginRight: -"1.5rem" }}
+        className="p-4 mt-5 bg-gray-200 rounded-lg dark:bg-dark-700"
+        style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">My Skills:</h6>
         <div className="grid gap-6 rounded-lg lg:grid-cols-2">

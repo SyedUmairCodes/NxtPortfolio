@@ -20,11 +20,11 @@ const Sidebar = () => {
       <h2 className="my-3 text-2xl font-medium tracking-wider dark:text-white font-roboto-condensed">
         Syed Umair Ali
       </h2>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full font-roboto-condensed">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full font-roboto-condensed dark:bg-dark-200">
         Web/Mobile Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 space-x-2 bg-gray-200 rounded-full font-roboto-condensed"
+        className="flex items-center justify-center px-2 py-1 my-3 space-x-2 bg-gray-200 rounded-full dark:bg-dark-200 font-roboto-condensed"
         href="#"
         download="resume"
       >
@@ -42,7 +42,7 @@ const Sidebar = () => {
         </a>
       </div>
       <div
-        className="py-4 my-4 bg-gray-200"
+        className="py-4 my-4 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
         <div className="flex items-center justify-center space-x-2">
