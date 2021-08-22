@@ -15,7 +15,7 @@ const Sidebar = () => {
       <Image
         src={userProfile}
         alt="user-profile"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="w-32 h-32 mx-auto rounded-md"
       />
       <h2 className="my-3 text-2xl font-medium tracking-wider dark:text-white font-roboto-condensed">
         Syed Umair Ali
@@ -51,11 +51,13 @@ const Sidebar = () => {
         </div>
         <div className="flex items-center justify-center space-x-2">
           <FaMailBulk className="text-blue-900" />
-          <p className="my-2 font-roboto-condensed">Jhon@doe.com</p>
+          <p className="my-2 font-roboto-condensed">
+            syedumairali.617@gmail.com
+          </p>
         </div>
         <div className="flex items-center justify-center space-x-2">
           <FaPhone className="text-blue-900" />
-          <p className="my-2 font-roboto-condensed">+14434567890</p>
+          <p className="my-2 font-roboto-condensed">+92-3101123705</p>
         </div>
       </div>
       <button
