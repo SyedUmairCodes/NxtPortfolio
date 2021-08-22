@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 body {
-  background-color: #171717;
+  color: #354358;
   font-family: sans-serif;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom #044582 #0575e6);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
 }

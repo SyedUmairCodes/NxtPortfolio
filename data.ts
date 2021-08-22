@@ -104,6 +104,7 @@ export const tools: ISkill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: "Mern-House",
     description:
       "A production-ready Web-application that helps people rent houses",
@@ -114,6 +115,7 @@ export const projects: IProject[] = [
     tech: ["React", "Ant-Design", "GraphQL", "TypeScript"],
   },
   {
+    id: 2,
     name: "React-Gatsby Header",
     description: "A modern react header component ",
     image_path: "/images/reactheader.png",

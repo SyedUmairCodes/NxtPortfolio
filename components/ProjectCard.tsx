@@ -6,8 +6,13 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ProjectCard: FunctionComponent<{ project: IProject }> = ({
+const ProjectCard: FunctionComponent<{
+  project: IProject;
+  showDetail: null | number;
+  setShowDetail: (id: null | number) => void;
+}> = ({
   project: {
+    id,
     name,
     description,
     image_path,
@@ -16,8 +21,9 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
     category,
     tech,
   },
+  showDetail,
+  setShowDetail,
 }) => {
-  const [showDetail, setShowDetail] = useState(false);
   const variants = {
     initial: {
       opacity: 0,
@@ -34,13 +40,13 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
         src={image_path}
         alt={name}
         className="cursor-pointer"
-        onClick={() => setShowDetail(true)}
+        onClick={() => setShowDetail(id)}
         width="300"
         height="150"
         layout="responsive"
       />
       <p className="my-2 text-center font-roboto-condensed">{name}</p>
-      {showDetail && (
+      {showDetail === id && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <div>
             <Image
@@ -88,7 +94,7 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
           </div>
 
           <button
-            onClick={() => setShowDetail(false)}
+            onClick={() => setShowDetail(null)}
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
           >
             <MdClose />

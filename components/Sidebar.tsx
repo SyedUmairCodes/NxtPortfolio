@@ -15,7 +15,7 @@ const Sidebar = () => {
       <Image
         src={userProfile}
         alt="user-profile"
-        className="w-32 h-32 mx-auto rounded-md"
+        className="w-32 h-32 mx-auto rounded-full"
       />
       <h2 className="my-3 text-2xl font-medium tracking-wider dark:text-white font-roboto-condensed">
         Syed Umair Ali
@@ -70,7 +70,7 @@ const Sidebar = () => {
         onClick={changeTheme}
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r font-roboto-condensed from-blue-900 to-blue-400"
       >
-        Dark mode
+        Toggle theme
       </button>
     </div>
   );
