@@ -16,11 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Technologies Used
 
-<img src="./readmeimages/react.png" alt="react">
-<img src="./readmeimages/next.png" alt="next.js">
-<img src="./readmeimages/tailwind.png" alt="tailwind_css">
-<img src="./readmeimages/typescript.png" alt="typescript">
-<img src="./readmeimages/framer_motion.png" alt="framer-motion">
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+
 ## Screen Shots
 
 <img src="./readmeimages/resume.png" alt="resume">

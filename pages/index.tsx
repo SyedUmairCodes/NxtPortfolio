@@ -19,8 +19,8 @@ const index = () => {
         <h6 className="my-3 text-xl font-bold tracking-wide">My Skills:</h6>
         <div className="grid gap-6 rounded-lg lg:grid-cols-2">
           {services.map((service) => (
-            <div className="grid gap-6 lg:col-span-1">
-              <ServiceCard service={service} key={service.title} />
+            <div className="grid gap-6 lg:col-span-1" key={service.title}>
+              <ServiceCard service={service} />
             </div>
           ))}
         </div>
