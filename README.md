@@ -31,3 +31,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <img src="./readmeimages/projects.png" alt="projects">
 
 ## Deployment
+
+Live Site:
+
+Link 1: [Vercel version](https://nxt-portfolio.vercel.app/)
+Link 2: [Netlify version](https://nxt-portfolio.netlify.app/)
